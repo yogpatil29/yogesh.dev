@@ -55,7 +55,7 @@ export const resume = {
   path: '/resume/Yogesh_Patil_Resume.pdf',
   downloadName: 'Yogesh_Patil_Java_Full_Stack_Developer_Resume.pdf',
   // TODO: optional — e.g. 'October 2026'. Leave '' to hide.
-  lastUpdated: '',
+  lastUpdated: 'Oct 2026',
   message:
     'A one-page overview of my experience, projects and technical skills — handy for sharing with your hiring team.',
 };
@@ -115,7 +115,7 @@ export const experience = [
     title: 'Software Engineer',
     role: 'Team Lead & Full Stack Developer (project level)',
     company: 'Dakshabhi IT Solutions Pvt Ltd.',
-    location: '', // TODO: optional, e.g. 'Pune, India'
+    location: 'Pune, India',
     start: 'Oct 2022',
     end: 'Present',
     summary:
@@ -164,8 +164,8 @@ export const projects = [
       'Led the development team as Team Lead.',
     ],
     features: ['Online visa application forms', 'Document upload', 'Application status tracking', 'Verification & approval workflow'],
-    tech: ['Java', 'Spring Boot', 'REST APIs', 'React'], // TODO: add database/other tech used
-    outcome: '', // TODO: optional measurable outcome
+    tech: ['Java', 'Spring Boot', 'REST APIs', 'ReactJs'],
+    outcome: '',  
     links: { github: '', live: '' },
   },
   {
@@ -184,8 +184,8 @@ export const projects = [
       'Increased internal workflow efficiency by 40%.',
       'Reduced manual tracking errors by 70%.',
     ],
-    features: [], // TODO: list the ERP modules you built (e.g. names of modules)
-    tech: ['Java', 'Spring Boot', 'Hibernate', 'React', 'MySQL'], // TODO: confirm stack
+    features: ['Inventory Management', 'Purchase Procurement', 'Sales', 'Production', 'Human Resources'], // TODO: list the ERP modules you built (e.g. names of modules)
+    tech: ['Java', 'Spring Boot', 'Hibernate', 'ReactJs', 'MySQL'], // TODO: confirm stack
     outcome: '40% faster internal workflows · 70% fewer manual tracking errors',
     links: { github: '', live: '' },
   },
@@ -285,5 +285,5 @@ export const navLinks = [
 
 export const site = {
   // TODO: set once you have a domain (also update the Open Graph tags in index.html).
-  url: '',
+  url: 'https://yogeshpatildev.netlify.app',
 };
