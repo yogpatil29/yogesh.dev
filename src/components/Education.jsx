@@ -27,7 +27,7 @@ export default function Education() {
           </motion.article>
         ))}
 
-        {(hasExtras || import.meta.env.DEV) && (
+        {/* {(hasExtras || import.meta.env.DEV) && (
           <motion.article className="edu-card glass card-hover" variants={fadeUp}>
             <span className="icon-badge">
               <Award size={22} aria-hidden="true" />
@@ -50,7 +50,8 @@ export default function Education() {
                 ))}
               </ul>
             ) : (
-              <Placeholder>certifications</Placeholder>
+              //<Placeholder>certifications</Placeholder>
+              <></>
             )}
             {courses.length > 0 ? (
               <ul className="course-list">
@@ -61,10 +62,11 @@ export default function Education() {
                 ))}
               </ul>
             ) : (
-              <Placeholder>relevant courses</Placeholder>
+              //<Placeholder>relevant courses</Placeholder>
+              <></>
             )}
           </motion.article>
-        )}
+        )} */}
       </motion.div>
     </Section>
   );

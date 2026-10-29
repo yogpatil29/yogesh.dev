@@ -227,12 +227,18 @@ export const education = [
     degree: 'Master of Computer Applications (MCA)',
     institution: 'Institute of Management & Research, Jalgaon, Maharashtra',
     period: '2021 – 2023',
-    details: '', // TODO: optional — grade, specialisation, final-year project
+    details: '', 
   },
   {
     degree: 'Bachelor of Science (Information Technology)',
     institution: 'N.Y.N.C. Arts, Science & Commerce College, Chalisgaon, Maharashtra',
     period: '2018 – 2021',
+    details: '',
+  },
+  {
+    degree: 'HSC (12th Science)',
+    institution: 'Rashtriya Junior College, Chalisgaon, Maharashtra',
+    period: '2016 – 2018',
     details: '',
   },
 ];
@@ -243,6 +249,13 @@ export const certifications = [];
 // TODO: add relevant courses, e.g. 'Spring Boot Microservices — Udemy'
 export const courses = [];
 
+/**
+ * Formspree form ID (create a free form at https://formspree.io). From the endpoint
+ * https://formspree.io/f/abcdwxyz, paste only the ID part, e.g. 'abcdwxyz'.
+ * Leave '' to keep the contact form switched off.
+ */
+const formspreeId = 'mjyyovgz';
+
 export const contact = {
   heading: "Have an opportunity or project in mind? Let's build something great together.",
   subheading:
@@ -251,12 +264,12 @@ export const contact = {
    * Form submission endpoint. Leave '' until you connect a real service.
    * The form POSTs JSON { name, email, subject, message } to this URL and treats
    * any 2xx response as success. Works with:
-   *   - Formspree:  'https://formspree.io/f/your-form-id'
+   *   - Formspree: set formspreeId above (used by default)
    *   - Your own Spring Boot API: 'https://api.your-domain.com/api/contact'
    * While empty, the form validates input and then offers to open the visitor's
    * email app instead — it never pretends a message was sent.
    */
-  formEndpoint: '',
+  formEndpoint: formspreeId ? `https://formspree.io/f/${formspreeId}` : '',
   privacyNote:
     'Your details are used only to reply to your message. They are never shared or used for marketing.',
 };

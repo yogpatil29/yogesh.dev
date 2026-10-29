@@ -31,7 +31,8 @@ export default function About() {
               ))}
             </ul>
           ) : (
-            <Placeholder>add achievements in about.achievements</Placeholder>
+            //<Placeholder>add achievements in about.achievements</Placeholder>
+            <></>
           )}
         </Reveal>
 
